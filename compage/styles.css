@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editor-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #282c34;
+}
+
+#editor {
+    flex-grow: 1;
+    height: calc(100% - 40px);
+    color: white;
+    font-size: 16px;
+}
+
+#run-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #61dafb;
+    border: none;
+    color: #282c34;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.io-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.input-section, .output-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+#stdin, #output {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#stdin {
+    resize: none;
+}
+
+h3 {
+    margin-top: 0;
+}
